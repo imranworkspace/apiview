@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--gxgiyznwuwdj+!s9zo3ir8k5m55ib=bc*#b3-3s7=*so+@yuu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['172.31.33.196']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -35,8 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'whitenoise.runserver_nostatic',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'rest_framework',
     'api',
@@ -133,11 +133,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 #local path
-# STATIC_URL = ' /'
+STATIC_URL = ' /'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # prod path
-STATIC_URL = 'static/'
+# STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 MEDIA_URLS ='/media/'
