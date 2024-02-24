@@ -89,10 +89,10 @@ WSGI_APPLICATION = 'apiview.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'imrandb',
-       'USER': 'masteruser',
-       'PASSWORD': '123456789',
-       'HOST': 'mydbinstance.c580uqqeiwk6.eu-north-1.rds.amazonaws.com',
+       'NAME': '',
+       'USER': '',
+       'PASSWORD': '',
+       'HOST': '',
        'PORT': '5432',
    }
 }
@@ -150,11 +150,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # aws-s3 bucket
-AWS_ACCESS_KEY_ID = 'AKIA6ODU6DUXPICZ4LFL'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'mybucketdj2'
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
+AWS_STORAGE_BUCKET_NAME = ''
 AWS_S3_SIGNATURE_NAME = 's3v4',
-AWS_S3_REGION_NAME = 'eu-north-1'
+AWS_S3_REGION_NAME = ''
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL =  None
 AWS_S3_VERITY = True
